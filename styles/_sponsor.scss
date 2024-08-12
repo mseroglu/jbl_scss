@@ -1,0 +1,17 @@
+.sponsor{  
+
+   &__container{      
+      grid-template-columns: repeat(2, max-content);
+      justify-content: center;
+      align-items: center;
+      img{
+         max-width: 150px;
+         transition: .3s;
+         cursor: pointer;
+         &:hover{
+            scale: 1.1;
+         }
+      }
+   }
+
+}

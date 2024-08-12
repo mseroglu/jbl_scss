@@ -1,0 +1,99 @@
+.home {
+   width: 100%;
+
+   &__container {
+      display: flex;
+      padding: 5rem 1rem;
+      gap: 2.5rem;
+      position: relative;
+   }
+
+   &__content {
+      position: relative;
+      display: grid;
+      justify-self: center;
+   }
+
+   &__img {
+      width: 220px;
+   }
+
+   &__title {
+      display: flex;
+      font-size: var(--biggest-font-size);
+      position: absolute;
+      color: var(--first-color);
+      top: -32px;
+      gap: 7px;
+      justify-self: center;
+
+      span:nth-child(2) {
+         z-index: -1;
+      }
+   }
+
+   &__tooltip {
+      position: absolute;
+      top: -8px;
+      right: 24px;
+
+      &-img {
+         width: 60px;
+      }
+
+      &-text {
+         position: absolute;
+         right: -45px;
+         top: -15px;
+         color: var(--white-color);
+         background: var(--gradient-color);
+         font-weight: var(--font-medium);
+         font-size: var(--small-font-size);
+         border-radius: 64px;
+         padding: 6px 12px;
+         white-space: nowrap;
+      }
+   }
+
+   &__social {
+      display: grid;
+      justify-content: center;
+      gap: 96px;
+      position: absolute;
+      top: 120px;
+      left: -24px;
+
+      &-text {
+         position: relative;
+         rotate: 90deg;
+         font-size: var(--small-font-size);
+         font-weight: var(--font-medium);
+
+         &::after {
+            content: "";
+            width: 50px;
+            height: 1px;
+            background-color: white;
+            position: absolute;
+            top: 10px;
+            margin-left: 10px;
+         }
+      }
+
+      &-links {
+         display: grid;
+         place-items: center;
+         gap: 10px;
+      }
+
+      &-link {
+         color: var(--text-color);
+         font-size: 20px;
+         transition: color .4s;
+
+         &:hover {
+            color: var(--first-color);
+         }
+      }
+   }
+}

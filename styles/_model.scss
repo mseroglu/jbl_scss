@@ -1,0 +1,43 @@
+.model{
+
+   &__container{
+      padding-top: 32px;
+   }
+   &__content{
+      position: relative;
+      justify-self: center;
+      img{
+         width: 280px;
+      }
+   }
+   &__tooltip{
+      position: absolute;
+      img{
+         width: 80px;
+      }
+      &-text{
+         background: var(--gradient-color);
+         padding: 6px 12px;
+         border-radius: 64px;
+         color: white;
+         font-size: var(--small-font-size);
+         font-weight: var(--font-medium);
+         position: absolute;
+         transform: translate(65px, -50px);
+         white-space: nowrap;
+      }
+      &-1{
+         transform: translate(80px,-180px);
+      }
+      &-2{
+         transform: translate(170px,-250px);
+      }
+      &-3{
+         transform: translate(120px,-140px);
+      }
+      &-4{
+         transform: translate(60px,-60px);
+      }
+   }
+
+}
